@@ -817,13 +817,15 @@
     @media (max-width: 480px) {
       .hero {
         height: 100vh;
-        height: 100svh; /* svh excluye chrome del navegador — debe ir DESPUÉS del fallback */
+        height: 100svh;
         min-height: unset;
-        align-items: flex-start;
-        padding-top: 4.5rem;
+        align-items: center;
+        justify-content: center;
+        padding-top: 4rem;
+        padding-bottom: 2rem;
       }
       .hero-content {
-        padding: 0 1.1rem 1.5rem;
+        padding: 0 1.3rem;
         max-width: 100%;
         width: 100%;
       }
@@ -835,31 +837,31 @@
         overflow: hidden;
         text-overflow: ellipsis;
         max-width: 100%;
-        margin-bottom: 0.6rem;
+        margin-bottom: 0.7rem;
       }
       .hero-name {
-        font-size: clamp(2.4rem, 11vw, 3.2rem);
-        margin-bottom: 0.3rem;
+        font-size: clamp(3.5rem, 15vw, 5rem);
+        margin-bottom: 0.4rem;
+        line-height: 0.95;
       }
       .hero-subtitle {
-        font-size: clamp(0.9rem, 4vw, 1.1rem);
-        margin-bottom: 1rem;
+        font-size: clamp(1rem, 4.2vw, 1.2rem);
+        margin-bottom: 1.5rem;
         white-space: normal;
-        overflow: hidden;
       }
       .hero-stats {
-        gap: 1.2rem;
+        gap: 1.5rem;
         flex-wrap: nowrap;
-        margin-bottom: 1.2rem;
+        margin-bottom: 1.8rem;
       }
-      .stat-num { font-size: 1.6rem; }
-      .stat-label { font-size: 0.45rem; letter-spacing: 0.1em; }
-      .hero-cta { flex-direction: column; gap: 0.6rem; }
+      .stat-num { font-size: 2rem; }
+      .stat-label { font-size: 0.48rem; letter-spacing: 0.1em; }
+      .hero-cta { flex-direction: column; gap: 0.7rem; }
       .btn-primary,
       .btn-outline {
         text-align: center;
         width: 100%;
-        padding: 0.75rem 1rem;
+        padding: 0.85rem 1rem;
         letter-spacing: 0.12em;
       }
 
